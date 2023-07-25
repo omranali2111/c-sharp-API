@@ -1,0 +1,15 @@
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\c-sharp-API.exe
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\c-sharp-API.deps.json
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\c-sharp-API.runtimeconfig.json
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\c-sharp-API.dll
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\c-sharp-API.pdb
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.csproj.AssemblyReference.cache
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.AssemblyInfoInputs.cache
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.AssemblyInfo.cs
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.csproj.CoreCompileInputs.cache
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.dll
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\refint\c-sharp-API.dll
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.pdb
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.genruntimeconfig.cache
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\ref\c-sharp-API.dll
