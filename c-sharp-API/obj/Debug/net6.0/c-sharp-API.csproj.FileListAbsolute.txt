@@ -13,3 +13,5 @@ C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\refint\c-
 C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.pdb
 C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.genruntimeconfig.cache
 C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\ref\c-sharp-API.dll
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\ict\Desktop\code-TRA\c-sharp-API\c-sharp-API\obj\Debug\net6.0\c-sharp-API.csproj.CopyComplete

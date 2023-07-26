@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+++x6QTsDHsq4Ex/EueoWDtBLAiOWDKP+lepE3ra6hmMDrTdPKQL9wVa9JmAgxnetbSFcCxQ59d6H6sgvjclOw==",
+  "dgSpecHash": "h2HZEuHvYsyBru+XOcbrFkHUNQzue+hLm9Jc5XqUYpxHfzOckFBaxRi6ISI033h/bB4C3T82lOQEh465ciZoYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ict\\Desktop\\code-TRA\\c-sharp-API\\c-sharp-API\\c-sharp-API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ict\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -12,10 +12,10 @@ namespace c_sharp_API
     {
        
             public string officialName { get; set; }
-            public string capital { get; set; }
+        public List<string> capital { get; set; }
             public double area { get; set; }
 
-        public Country(string officialName, string capital, double area) 
+        public Country(string officialName, List<string> capital, double area) 
         { 
             this.officialName = officialName;
             this.capital = capital;
