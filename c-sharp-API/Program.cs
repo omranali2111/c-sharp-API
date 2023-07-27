@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 internal class Program
 {
     static async Task Main(string[] args)
-    {
+    {/*
         try
         {
             List<Country> countryList = await CallAPI();
@@ -36,7 +36,28 @@ internal class Program
         {
             Console.WriteLine($"An error occurred: {ex.Message}");
         }
+        */
+    try { 
+        List<Root> Weatherlist= await callWeatherAPI();
+        if (Weatherlist != null)
+        {
+           
+            foreach (Root root in Weatherlist)
+            {
+                Console.WriteLine(root.ToString());
+
+            }
+        }
+        else
+        {
+            Console.WriteLine("Failed to fetch data from the API.");
+        }
     }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
+ }
 
 
      public  async static Task<List<Country>> CallAPI()
@@ -97,21 +118,48 @@ internal class Program
         
 
     }
-    /*
-    public async void callWeatherAPI()
+
+    public async static Task<List<Root>> callWeatherAPI()
     {
         try
         {
-            string baseurl=""
+            string API = "http://api.openweathermap.org/data/2.5/weather?q=Muscat,om&APPID=a768c37a2a9a1b8f2a07bef5d0409c2d";
+            using (HttpClient httpClient = new HttpClient())
+            {
+                HttpResponseMessage ResponseMessage = await httpClient.GetAsync(API);
+                if (ResponseMessage.IsSuccessStatusCode)
+                {
+                    string stringRes = await ResponseMessage.Content.ReadAsStringAsync();
 
-        }catch (Exception ex)
+                    Root weatherData = JsonConvert.DeserializeObject<Root>(stringRes);
+
+                    // Return a list with a single element (the weather data for Muscat, Oman)
+                    return new List<Root> { weatherData };
+
+                }
+                else
+                {
+                    Console.WriteLine("Failed to get data from the API.");
+                }
+
+            }
+
+            return null;
+        }
+        catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
+            return null;
         }
+
+
+
+
     }
 
-    */
-   
+
+
+
 
 }
-    
+

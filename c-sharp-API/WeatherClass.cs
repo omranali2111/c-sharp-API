@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static c_sharp_API.Country;
 
 namespace c_sharp_API
 {
@@ -44,6 +45,13 @@ namespace c_sharp_API
         public int id { get; set; }
         public string name { get; set; }
         public int cod { get; set; }
+
+        public override string ToString()
+        {
+            string weatherDescription = weather.Count > 0 ? weather[0].description : "N/A";
+
+            return $"For the city: {name}, \n The tem is: {main.temp},\n feels like: {main.feels_like},\nDescription of Weather: {weatherDescription}";
+        }
     }
 
     public class Sys
@@ -68,6 +76,8 @@ namespace c_sharp_API
         public double speed { get; set; }
         public int deg { get; set; }
     }
+
+    
 
 
 }
