@@ -37,26 +37,11 @@ internal class Program
             Console.WriteLine($"An error occurred: {ex.Message}");
         }
         */
-    try { 
-        List<Root> Weatherlist= await callWeatherAPI();
-        if (Weatherlist != null)
-        {
+    
+        await callWeatherAPI();
+       
            
-            foreach (Root root in Weatherlist)
-            {
-                Console.WriteLine(root.ToString());
-
-            }
-        }
-        else
-        {
-            Console.WriteLine("Failed to fetch data from the API.");
-        }
-    }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"An error occurred: {ex.Message}");
-        }
+         
  }
 
 
@@ -119,7 +104,7 @@ internal class Program
 
     }
 
-    public async static Task<List<Root>> callWeatherAPI()
+    public async static Task callWeatherAPI()
     {
         try
         {
@@ -134,8 +119,8 @@ internal class Program
                     Root weatherData = JsonConvert.DeserializeObject<Root>(stringRes);
 
                     // Return a list with a single element (the weather data for Muscat, Oman)
-                    return new List<Root> { weatherData };
-
+                    //return new List<Root> { weatherData };
+                    Console.WriteLine(weatherData);
                 }
                 else
                 {
@@ -144,12 +129,12 @@ internal class Program
 
             }
 
-            return null;
+            //return null;
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
-            return null;
+            //return null;
         }
 
 
