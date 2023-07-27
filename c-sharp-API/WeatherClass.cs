@@ -45,12 +45,14 @@ namespace c_sharp_API
         public int id { get; set; }
         public string name { get; set; }
         public int cod { get; set; }
+        public double TempInCelsius => (main.temp - 273.15) ;
+        public double FeelLikeTempInCelsius => (main.feels_like - 273.15) ;
 
         public override string ToString()
         {
             string weatherDescription = weather.Count > 0 ? weather[0].description : "N/A";
 
-            return $"For the city: {name}, \n The tem is: {main.temp},\n feels like: {main.feels_like},\nDescription of Weather: {weatherDescription}";
+            return $"For the city: {name}, \nThe tem is: {TempInCelsius:F2},\nFeels like: {FeelLikeTempInCelsius:F2},\nDescription of Weather: {weatherDescription}";
         }
     }
 
