@@ -24,6 +24,7 @@ internal class Program
                  foreach (Country country in countryList)
                 {
                    Console.WriteLine(country.ToString());
+
                 }
             }
             else
@@ -45,11 +46,12 @@ internal class Program
             using (HttpClient httpClient = new HttpClient())
             {
                 HttpResponseMessage ResponseMessage = await httpClient.GetAsync(API);
-                List<Country> CountryList = new List<Country>();
+               // List<Country> CountryList = new List<Country>();
 
                 if (ResponseMessage.IsSuccessStatusCode)
                 {
                     string stringRes = await ResponseMessage.Content.ReadAsStringAsync();
+
                     /*
                     JsonDocument document=JsonDocument.Parse(stringRes);
                     JsonElement root= document.RootElement;
@@ -74,8 +76,9 @@ internal class Program
                     */
 
                     List<Country> a = JsonConvert.DeserializeObject<List<Country>>(stringRes);//Newtonsoft.Json
-
+                    
                     return a;
+
                 }
                 else
                 {
